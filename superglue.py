@@ -17,7 +17,7 @@ if not file_0_size <= file_1_size:
     print('It is necessary that the first file is less than or equal to the second!')
     sys.exit(1)
 
-with open(file_0_path, 'r+b') as file_0:
+with open(file_0_path, 'rb') as file_0:
     tmp_data_0 = file_0.read(-1)
     with open(file_1_path, 'r+b') as file_1:
         parts_number = int(file_1_size / file_0_size)
