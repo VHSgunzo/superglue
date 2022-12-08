@@ -1,0 +1,12 @@
+[package]
+name = "superglue"
+version = "0.0.2"
+readme = "README.md"
+license-file = "LICENSE"
+repository = "https://github.com/VHSgunzo/superglue"
+description = "Superglue for gluing runtime and squashfs image or shell script and archive"
+
+[profile.release]
+strip = "symbols"
+
+[dependencies]
