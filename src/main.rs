@@ -54,7 +54,7 @@ fn main() {
     let mut file_1 = OpenOptions::new()
         .read(true)
         .write(true)
-        .create(true)
+        .create(false)
         .open(args.file_1_path)
         .unwrap_or_else(|error| {
             eprintln!("{}: {}", FILE_1_STR, error);
