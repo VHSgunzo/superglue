@@ -1,12 +1,14 @@
 [package]
 name = "superglue"
-version = "0.0.3"
+version = "0.0.4"
 readme = "README.md"
 license-file = "LICENSE"
 repository = "https://github.com/VHSgunzo/superglue"
-description = "Superglue for gluing runtime and squashfs image or shell script and archive"
+description = "Tool for write a small file to the beginning of a large file in place"
 
 [profile.release]
 strip = "symbols"
-
-[dependencies]
+opt-level = "z"
+lto = true
+codegen-units = 1
+panic = "abort"
