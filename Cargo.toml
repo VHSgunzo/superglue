@@ -7,8 +7,8 @@ repository = "https://github.com/VHSgunzo/superglue"
 description = "Tool for write a small file to the beginning of a large file in place"
 
 [profile.release]
-strip = "symbols"
-opt-level = "z"
 lto = true
-codegen-units = 1
 panic = "abort"
+opt-level = "z"
+strip = "symbols"
+codegen-units = 1
